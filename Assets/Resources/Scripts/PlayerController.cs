@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float PanSensitivity;
     [SerializeField] int walkablelayer;
     [SerializeField] float JumpStrength;
+    [SerializeField] InventoryUIController inventoryUIController;
     
     private Vector2 currentMovement;
     private float currentSpeed;
@@ -83,5 +85,10 @@ public class PlayerController : MonoBehaviour
             }
         }
         return false;
+    }
+
+    private void OnToggleInventory()
+    {
+        inventoryUIController.ToggleVisibility();
     }
 }
