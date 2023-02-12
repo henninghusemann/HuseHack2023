@@ -14,6 +14,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float JumpStrength;
     [SerializeField] InventoryUIController inventoryUIController;
     [SerializeField] AudioSource stepAudioSource;
+    [SerializeField] AudioSource randomAudioSource;
+    [SerializeField] List<AudioClip> randomAudioClips;
+    [SerializeField] float MinRandClipDistance;
+    [SerializeField] float MaxRandClipDistance;
     
     private Vector2 currentMovement;
     private float currentSpeed;
@@ -27,6 +31,8 @@ public class PlayerController : MonoBehaviour
         walkableMask = 1 << walkablelayer;
         playerRigidbody = GetComponent<Rigidbody>();
         playerCamera.transform.forward = Vector3.forward;
+
+        StartCoroutine(RandomAudioPlayer());
     }
 
     // Update is called once per frame
@@ -101,5 +107,14 @@ public class PlayerController : MonoBehaviour
     private void OnToggleInventory()
     {
         inventoryUIController.ToggleVisibility();
+    }
+
+    private IEnumerator RandomAudioPlayer()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(MinRandClipDistance, MaxRandClipDistance));
+            randomAudioSource.PlayOneShot(randomAudioClips[Random.Range(0, randomAudioClips.Count)]);
+        }
     }
 }
