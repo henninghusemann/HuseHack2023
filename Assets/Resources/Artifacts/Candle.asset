@@ -16,6 +16,6 @@ MonoBehaviour:
   FriendlyName: Candle
   Description: Leuchti Leuchti
   InventoryIndex: 0
-  Icon: {fileID: 21300000, guid: 4543f45dc7ae8164090dcc7f4a5715e2, type: 3}
+  Icon: {fileID: 21300000, guid: 6a52becda9f98478fa94249c549a867a, type: 3}
   gameObject: {fileID: 6748874479814243562, guid: 537fa31f2c93c634591b7cb48883e94a,
     type: 3}

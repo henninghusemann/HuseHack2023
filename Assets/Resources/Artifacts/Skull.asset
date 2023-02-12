@@ -16,6 +16,6 @@ MonoBehaviour:
   FriendlyName: 
   Description: 
   InventoryIndex: 0
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: ce9adf89860d9441e88e9c090d90873b, type: 3}
   gameObject: {fileID: 5244019827094162114, guid: dd45d67184393b24786fa9a7e7a6a357,
     type: 3}

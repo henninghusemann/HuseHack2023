@@ -16,6 +16,6 @@ MonoBehaviour:
   FriendlyName: Bishop
   Description: 
   InventoryIndex: 0
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: de74dcec1bb8e49a79e18e1c70c0337b, type: 3}
   gameObject: {fileID: 5910464637517661621, guid: 681bb6e02211a1b46924cc02b6d48efd,
     type: 3}
