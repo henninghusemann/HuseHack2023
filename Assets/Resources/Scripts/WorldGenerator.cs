@@ -12,26 +12,36 @@ public class WorldGenerator : MonoBehaviour
 
     private void generateWater(int x, int y)
     {
-        GameObject go = Instantiate((GameObject) waterObjects[0]);
+        GameObject go = Instantiate((GameObject) waterObjects[Random.Range(0, waterObjects.Length)]);
         go.transform.position = new Vector3(x, 0f, y);
+        go.transform.Rotate(-90, 0, 0);
     }
 
     private void generateJungle(int x, int y)
     {
-        GameObject go = Instantiate((GameObject) jungleObjects[0]);
-        go.transform.position = new Vector3(x, 0f, y);
+        GameObject go = Instantiate((GameObject) jungleObjects[Random.Range(0, jungleObjects.Length)]);
+        go.transform.position = new Vector3(x + Random.Range(-0.3f, 0.3f), 0f, y + Random.Range(-0.3f, 0.3f));
+        go.transform.Rotate(-90, 0, 0);
+        go.transform.localScale = new Vector3(6, 6, 10);
     }
 
     private void generateGrass(int x, int y)
     {
-        GameObject go = Instantiate((GameObject) grassObjects[0]);
-        go.transform.position = new Vector3(x, 0f, y);
+        for (int i = 0; i < 4; i++)
+        {
+            GameObject go = Instantiate((GameObject) grassObjects[Random.Range(0, grassObjects.Length)]);
+            go.transform.position = new Vector3(x + Random.Range(-0.4f, 0.4f), 0f, y + Random.Range(-0.4f, 0.4f));
+            go.transform.Rotate(-90, 0, 0);
+            go.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        }
     }
 
     private void generateTemple(int x, int y)
     {
-        GameObject go = Instantiate((GameObject) templeObjects[0]);
-        go.transform.position = new Vector3(x, 0f, y);
+        GameObject go = Instantiate((GameObject) templeObjects[Random.Range(0, templeObjects.Length)]);
+        go.transform.position = new Vector3(x + Random.Range(-0.2f, 0.2f), 0f, y + Random.Range(-0.2f, 0.2f));
+        go.transform.Rotate(-90, 0, 0);
+        go.transform.localScale = new Vector3(1, 1, Random.Range(1, 4));
     }
 
     private string simplifyColor(Color32 color)
