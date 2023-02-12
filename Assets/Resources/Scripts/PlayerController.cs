@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int walkablelayer;
     [SerializeField] float JumpStrength;
     [SerializeField] InventoryUIController inventoryUIController;
+    [SerializeField] AudioSource stepAudioSource;
     
     private Vector2 currentMovement;
     private float currentSpeed;
@@ -39,6 +40,15 @@ public class PlayerController : MonoBehaviour
     {
         var v = value.Get<Vector2>();
         currentMovement = new Vector2(v.x, v.y);
+        Debug.Log("currentMovement" + currentMovement);
+        if(currentMovement.magnitude < 0.1f)
+        {
+            stepAudioSource.mute = true;
+        }
+        else
+        {
+            stepAudioSource.mute = false;
+        }
     }
 
     private void OnLook(InputValue value)

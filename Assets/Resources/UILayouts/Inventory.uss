@@ -39,11 +39,12 @@
     border-bottom-left-radius: 3px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    background-image: resource('UILayouts/unkownItem');
+    background-image: none;
 }
 
 .slotIcon {
     padding: 15px;
     flex-shrink: 0;
     flex-grow: 1;
+    background-image: resource('UILayouts/unkownItem');
 }

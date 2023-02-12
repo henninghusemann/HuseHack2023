@@ -9,6 +9,8 @@ public class CollectorController : MonoBehaviour
     [SerializeField] float maxSchootDistance;
     [SerializeField] int collectablelayer;
     [SerializeField] InventoryUIController inventoryUIController;
+    [SerializeField] AudioSource collectAudioSource;
+    [SerializeField] List<AudioClip> collectAudioClips;
 
     private int collectableMask;
 
@@ -35,6 +37,8 @@ public class CollectorController : MonoBehaviour
             inventoryUIController.AddCollectedItem(artifact);
             Destroy(hitInfo.collider.gameObject);
             Debug.DrawLine(cameraPosition, hitInfo.point, Color.blue, 4f);
+
+            collectAudioSource.PlayOneShot(collectAudioClips[Random.Range(0, collectAudioClips.Count)]);
         }
     }
 }

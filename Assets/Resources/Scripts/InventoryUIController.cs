@@ -17,7 +17,7 @@ public class InventoryUIController : MonoBehaviour
         //Search the root for the SlotContainer Visual Element
         m_SlotContainer = m_Root.Q<VisualElement>("SlotContainer");
         //Create InventorySlots and add them as children to the SlotContainer
-        for (int i = 0; i < 24; i++)
+        for (int i = 0; i < 9; i++)
         {
             InventorySlot item = new InventorySlot();
             InventoryItems.Add(item);
