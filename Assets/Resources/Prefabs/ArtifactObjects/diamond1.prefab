@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4889601596676780104}
   - component: {fileID: 5306849448076417527}
   - component: {fileID: -1456321662577915205}
+  - component: {fileID: 1176828443192890526}
   m_Layer: 9
   m_Name: diamond1
   m_TagString: Untagged
@@ -97,3 +98,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   artifact: {fileID: 11400000, guid: a981beeb4d0b0434aa7e441f84ef27bc, type: 2}
+--- !u!64 &1176828443192890526
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6538259696990480066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3492356148361358986, guid: a7103c1bcda388c4b8f13eb4f30d707d, type: 3}

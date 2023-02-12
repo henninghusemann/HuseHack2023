@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1093284243258012962}
   - component: {fileID: 8330350447604167553}
   - component: {fileID: 8343923119101763319}
+  - component: {fileID: 2892737684282646903}
   m_Layer: 9
   m_Name: Candle
   m_TagString: Untagged
@@ -97,3 +98,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   artifact: {fileID: 11400000, guid: 28dc8dc990ed480458d903cf3b4011fc, type: 2}
+--- !u!64 &2892737684282646903
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7135144889843886114}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3033996063522644917, guid: 4a6c1b41f048b6643822c3a610aafb01, type: 3}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 532383822521276335}
   - component: {fileID: 5426868198384518687}
   - component: {fileID: -6487872261736233414}
+  - component: {fileID: -9091992718835170932}
   m_Layer: 9
   m_Name: Vase
   m_TagString: Untagged
@@ -97,3 +98,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   artifact: {fileID: 11400000, guid: 0bcd9096568423b4c815aeb68b4a767f, type: 2}
+--- !u!64 &-9091992718835170932
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6851620448768988007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8246494051924840529, guid: 4a6c1b41f048b6643822c3a610aafb01, type: 3}

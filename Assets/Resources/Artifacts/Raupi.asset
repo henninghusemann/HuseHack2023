@@ -15,7 +15,7 @@ MonoBehaviour:
   ID: a7d17f57-6e1f-4738-8bae-b415b5061b87
   FriendlyName: 
   Description: 
-  InventoryIndex: 0
+  InventoryIndex: 5
   Icon: {fileID: 21300000, guid: 4d8a4422522e1462b9ff140665956936, type: 3}
   gameObject: {fileID: 6513819823779791907, guid: 345c1be9bd3995d43b71dee112158ae2,
     type: 3}

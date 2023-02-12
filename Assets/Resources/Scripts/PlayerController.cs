@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private int walkableMask;
     private Rigidbody playerRigidbody;
 
+
     void Start()
     {
         currentSpeed = WalkingSpeed;

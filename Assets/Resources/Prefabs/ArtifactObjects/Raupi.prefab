@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8982580760851497262}
   - component: {fileID: 2354008121312596717}
   - component: {fileID: -7296335323501904161}
+  - component: {fileID: -6195367888466471750}
   m_Layer: 9
   m_Name: Raupi
   m_TagString: Untagged
@@ -97,3 +98,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   artifact: {fileID: 11400000, guid: 77408fc45ce2d154298c1f826e9d8d05, type: 2}
+--- !u!64 &-6195367888466471750
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6513819823779791907}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7186487784239999397, guid: 4a6c1b41f048b6643822c3a610aafb01, type: 3}

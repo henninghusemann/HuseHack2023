@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4329803021039202279}
   - component: {fileID: 519711574220602105}
   - component: {fileID: -7926859608549506947}
+  - component: {fileID: -374695558005168785}
   m_Layer: 9
   m_Name: bishop
   m_TagString: Untagged
@@ -97,3 +98,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   artifact: {fileID: 11400000, guid: 149fd253a09feb9499159af01e71d3d3, type: 2}
+--- !u!64 &-374695558005168785
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910464637517661621}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7809067171011586860, guid: a7103c1bcda388c4b8f13eb4f30d707d, type: 3}
