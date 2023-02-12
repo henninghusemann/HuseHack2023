@@ -557,6 +557,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4815085755258330650, guid: f89f370d42ad73345a720834c27d5287,
         type: 3}
+      propertyPath: PanSensitivity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815085755258330650, guid: f89f370d42ad73345a720834c27d5287,
+        type: 3}
       propertyPath: inventoryUIController
       value: 
       objectReference: {fileID: 2059726624}
