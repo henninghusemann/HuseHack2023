@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4726806213546379703
+--- !u!1 &8147094822136294488
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5679054821438423482}
-  - component: {fileID: 6978859424653721592}
-  - component: {fileID: 7233007212344989823}
+  - component: {fileID: 4442532249427154832}
+  - component: {fileID: 4053363455118322442}
+  - component: {fileID: 4183810255929481104}
   m_Layer: 0
-  m_Name: saeule_1
+  m_Name: stones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5679054821438423482
+--- !u!4 &4442532249427154832
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4726806213546379703}
-  m_LocalRotation: {x: -0.7071068, y: 3.4315516e-24, z: -1.5700931e-16, w: 0.7071067}
-  m_LocalPosition: {x: 13, y: -0.000000059604645, z: 6.550316e-15}
-  m_LocalScale: {x: 1.9053165, y: 1.9053165, z: 1.9053165}
+  m_GameObject: {fileID: 8147094822136294488}
+  m_LocalRotation: {x: -0.66679835, y: -0.23532954, z: 0.23532952, w: 0.66679835}
+  m_LocalPosition: {x: 8, y: 0, z: -5.551115e-16}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6978859424653721592
+--- !u!33 &4053363455118322442
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4726806213546379703}
-  m_Mesh: {fileID: -9076404922219575197, guid: a7103c1bcda388c4b8f13eb4f30d707d, type: 3}
---- !u!23 &7233007212344989823
+  m_GameObject: {fileID: 8147094822136294488}
+  m_Mesh: {fileID: 7478561364360854413, guid: a7103c1bcda388c4b8f13eb4f30d707d, type: 3}
+--- !u!23 &4183810255929481104
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4726806213546379703}
+  m_GameObject: {fileID: 8147094822136294488}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1

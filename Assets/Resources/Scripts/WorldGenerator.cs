@@ -7,22 +7,38 @@ public class WorldGenerator : MonoBehaviour
     [SerializeField] Texture2D mapData;
     object[] waterObjects;
     object[] jungleObjects;
+    object[] treeObjects;
     object[] grassObjects;
     object[] templeObjects;
+    object[] statueObjects;
 
     private void generateWater(int x, int y)
     {
         GameObject go = Instantiate((GameObject) waterObjects[Random.Range(0, waterObjects.Length)]);
         go.transform.position = new Vector3(x, 0f, y);
-        go.transform.Rotate(-90, 0, 0);
+        //go.transform.Rotate(-90, 0, 0);
     }
 
     private void generateJungle(int x, int y)
     {
-        GameObject go = Instantiate((GameObject) jungleObjects[Random.Range(0, jungleObjects.Length)]);
-        go.transform.position = new Vector3(x + Random.Range(-0.3f, 0.3f), 0f, y + Random.Range(-0.3f, 0.3f));
-        go.transform.Rotate(-90, 0, 0);
-        go.transform.localScale = new Vector3(6, 6, 10);
+        float category = Random.Range(0f, 1f);
+        if (category < 0.2f)
+        {
+            GameObject treeGO = Instantiate((GameObject)treeObjects[Random.Range(0, treeObjects.Length)]);
+            treeGO.transform.position = new Vector3(x + Random.Range(-0.3f, 0.3f), 0f, y + Random.Range(-0.3f, 0.3f));
+        }
+        else if (category < 0.5f) {
+            GameObject jungleGO = Instantiate((GameObject)jungleObjects[Random.Range(0, jungleObjects.Length)]);
+            jungleGO.transform.position = new Vector3(x + Random.Range(-0.3f, 0.3f), 0f, y + Random.Range(-0.3f, 0.3f));
+
+        }
+        else {
+            GameObject go = Instantiate((GameObject) grassObjects[Random.Range(0, grassObjects.Length)]);
+            go.transform.position = new Vector3(x + Random.Range(-0.3f, 0.3f), 0f, y + Random.Range(-0.3f, 0.3f));
+
+        }
+                //go.transform.Rotate(-90, 0, 0);
+        //go.transform.localScale = new Vector3(6, 6, 10);
     }
 
     private void generateGrass(int x, int y)
@@ -31,8 +47,8 @@ public class WorldGenerator : MonoBehaviour
         {
             GameObject go = Instantiate((GameObject) grassObjects[Random.Range(0, grassObjects.Length)]);
             go.transform.position = new Vector3(x + Random.Range(-0.4f, 0.4f), 0f, y + Random.Range(-0.4f, 0.4f));
-            go.transform.Rotate(-90, 0, 0);
-            go.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            //go.transform.Rotate(-90, 0, 0);
+            //go.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         }
     }
 
@@ -40,8 +56,8 @@ public class WorldGenerator : MonoBehaviour
     {
         GameObject go = Instantiate((GameObject) templeObjects[Random.Range(0, templeObjects.Length)]);
         go.transform.position = new Vector3(x + Random.Range(-0.2f, 0.2f), 0f, y + Random.Range(-0.2f, 0.2f));
-        go.transform.Rotate(-90, 0, 0);
-        go.transform.localScale = new Vector3(1, 1, Random.Range(1, 4));
+        //go.transform.Rotate(-90, 0, 0);
+        //go.transform.localScale = new Vector3(1, 1, Random.Range(1, 4));
     }
 
     private string simplifyColor(Color32 color)
@@ -95,6 +111,8 @@ public class WorldGenerator : MonoBehaviour
         jungleObjects = Resources.LoadAll("Prefabs/JungleObjects");
         grassObjects = Resources.LoadAll("Prefabs/GrassObjects");
         templeObjects = Resources.LoadAll("Prefabs/TempleObjects");
+        statueObjects = Resources.LoadAll("Prefabs/StatueObjects");
+        treeObjects = Resources.LoadAll("Prefabs/TreeObjects");
     }
 
     // Update is called once per frame
