@@ -671,8 +671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea0fad66c8717be4d97e282189e4d412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapData: {fileID: 2800000, guid: 6d9b14f487dc2634fb74ddf147f5b537, type: 3}
-  tileSizeFactor: 2
+  mapData: {fileID: 2800000, guid: 87230b5f0622a2d4180a2534cf680a31, type: 3}
 --- !u!4 &604073007
 Transform:
   m_ObjectHideFlags: 0
