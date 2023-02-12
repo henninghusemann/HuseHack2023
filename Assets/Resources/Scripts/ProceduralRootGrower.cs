@@ -74,9 +74,9 @@ public class ProceduralRootGrower : MonoBehaviour
             if (ground)
             {
                 Vector3 groundedPos = FindGround(position + Vector3.up);
-                groundedPos += 0.5f * StepToRadius(i, steps, startRadius) * Vector3.up;
-
-                GrowDirection = Vector3.Slerp(GrowDirection,(groundedPos - position).normalized,0.25f);
+                //groundedPos += 0.5f * StepToRadius(i, steps, startRadius) * Vector3.up;
+                position = groundedPos;
+                //GrowDirection = Vector3.Slerp(GrowDirection,(groundedPos - position).normalized,0.25f);
             }
 
             GrowDirection = Vector3.Slerp(GrowDirection, Random.insideUnitSphere, randomness);

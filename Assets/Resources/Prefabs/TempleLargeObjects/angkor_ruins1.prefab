@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3078875085743377661}
   - component: {fileID: 5781578451499420371}
   - component: {fileID: 8562714805780560923}
+  - component: {fileID: 5450682004328851278}
   m_Layer: 0
   m_Name: angkor_ruins1
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5450682004328851278
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5026978306899552449}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5136908548828120980, guid: a7103c1bcda388c4b8f13eb4f30d707d, type: 3}

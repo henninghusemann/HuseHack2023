@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 79801336530802654}
   - component: {fileID: 8047114867415126187}
   - component: {fileID: 6552984330422898977}
+  - component: {fileID: 6428026632923817403}
   m_Layer: 0
   m_Name: Turm1
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6428026632923817403
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8186382122149865359}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3467792221918199041, guid: 43ab45d1fde78df4590b5038564884d2, type: 3}

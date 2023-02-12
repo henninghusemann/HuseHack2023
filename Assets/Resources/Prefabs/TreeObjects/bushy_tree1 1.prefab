@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6892300568042060824}
   - component: {fileID: 1957226843186387088}
   - component: {fileID: 8388136724414925187}
+  - component: {fileID: -3971303021132759836}
   m_Layer: 0
   m_Name: bushy_tree1 1
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-3971303021132759836
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8133644907377625588}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8217363142691898369, guid: a7103c1bcda388c4b8f13eb4f30d707d, type: 3}
